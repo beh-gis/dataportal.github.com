@@ -1,0 +1,2 @@
+####Percent population 65 years of age and older in Neighborhood Geography.
+####American Community Survey 2008-2012 (5-year)	( df[geo+'B01001020E'] + df[geo+'B01001021E'] + df[geo+'B01001022E'] + df[geo+'B01001023E'] + df[geo+'B01001024E'] + df[geo+'B01001025E'] + df[geo+'B01001044E'] + df[geo+'B01001045E'] + df[geo+'B01001046E'] + df[geo+'B01001047E'] +df[geo+'B01001048E'] + df[geo+'B01001049E'] ) / df[geo+'B01001001E']

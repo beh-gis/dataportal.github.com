@@ -1,0 +1,4 @@
+<style> 
+#map .cartodb-legend-stack { position: absolute; right: 10px;  width: 250px; top:5px; padding: 5px; z-index: 99; bottom: auto;}
+</style>
+

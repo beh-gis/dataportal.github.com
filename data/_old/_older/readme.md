@@ -1,0 +1,1 @@
+http://gis.stackexchange.com/questions/137277/moving-the-legend-with-cartodb-js

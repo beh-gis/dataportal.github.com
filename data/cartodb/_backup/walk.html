@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
+  <script src="http://libs.cartocdn.com/cartodb.js/v3/3.11/cartodb.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">   <!-- LOCAL FILE -->
+  <script src="walk_script.js"></script>   <!-- LOCAL FILE -->
+</head>
+
+<body onload="init()">
+  <div id='map'></div>
+  <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
+  <div id="leftpanel">
+    <div class="container">  
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="http://beh-gis.github.io" class="button all">Home</a>
+        </button>
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="http://localhost:4000/data/working/cartodb" class="button all">Reset</a>
+        </button>
+
+     <!-- <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Geography
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Census Tracts 2010</a></li>
+        </ul>
+      </div> -->
+      <!-- </br> -->
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a href="treecanopy.html" id="treeCanopy" class="button treeCanopy">Tree Canopy</a></li>
+          <li role="presentation"><a href="walk.html" id="walkability" class="button walkability">Walkability</a></li>
+          <li role="presentation"><a href="#mhhi" id="mhhi" class="button mhhi">Median Household Income</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- LEFT PANEL IS SAME FOR EVERY PAGE -->
+  <div id='exports'>
+      <p></p>
+      <button onclick="location.href='http://beh-gis.github.io/dictionary/ct2010/2014/12/31/walkability-ct2010.html'">Data dictionary</button>
+      <p></p>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk.csv&format=csv&q=SELECT geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as csv</button>
+      <p></p>
+      <button onclick="location.href='https://dms2203.cartodb.com/api/v2/sql?filename=beh_walk&format=shp&q=SELECT the_geom,geoid,t10_key,t10_km2,t10_lndkm2,t10_cnt,t10_resdn1,t10_intden,t10_entrpy,t10_rtlfar,t10_sub07d,t10_walk,t10_walk_c FROM nyct2010_walkability'">Export walkability data as shapefile</button>
+  </div>
+</body>
+</html>

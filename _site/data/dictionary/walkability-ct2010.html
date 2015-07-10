@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/data/dictionary/walkability-ct2010.html">
+  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/"></a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/data/">Data Portal</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <article class="post-content">
+    <h2 id="walkability-variables">Walkability Variables</h2>
+
+<hr />
+
+<h4 id="geoid"><strong>geoid</strong></h4>
+<p>Unique 11-digit US 2010 Census Tract ID.</p>
+
+<h4 id="t10km2"><strong>t10km2</strong></h4>
+<p>Total area of US 2010 Census Tract geography in km2.</p>
+
+<h4 id="t10lndkm2"><strong>t10lndkm2</strong></h4>
+<p>Total land area of US 2010 Census Tract geography in km2 (inland water bodies removed).</p>
+
+<h4 id="t10cnt"><strong>t10cnt</strong></h4>
+<p>Count of unique 2010 Census Blocks nested within each Tract and whose walkability index scale values participated in averaging-up process for each Tract.</p>
+
+<h4 id="t10resdn1"><strong>t10resdn1</strong></h4>
+<p>Density of residential units: z-scored.</p>
+
+<h4 id="t10intden"><strong>t10intden</strong></h4>
+<p>Density of unique streets intersections per km2: z-scored.</p>
+
+<h4 id="t10entrpy"><strong>t10entrpy</strong></h4>
+<p>Entropy land use mix: z-scored.</p>
+
+<h4 id="t10rtlfar"><strong>t10rtlfar</strong></h4>
+<p>Retail floor area ratio: z-scored.</p>
+
+<h4 id="t10sub07d"><strong>t10sub07d</strong></h4>
+<p>Density of subway stations per km2: z-scored.</p>
+
+<h4 id="t10walk"><strong>t10walk</strong></h4>
+<p>BEH Walkability Scale.</p>
+
+<h4 id="t10walkc"><strong>t10walkc</strong></h4>
+<p>Quintiles of BEH Walkability Scale.</p>
+
+<hr />
+
+<p>The information below is from a BEH data dictionary by James Quinn, Senior GIS Analyst called <a href="https://github.com/beh-gis/beh-gis.github.com/raw/master/projects/data_dictionary/walkability-gis-codebook-2010-tracts-20150112.pdf">GIS Code Book: New York City 2010 Census Tract Walkability Index</a></p>
+
+<h3 id="walkability-index-scale">Walkability Index Scale</h3>
+<p>A number of researchers have constructed walkability indices which summarize built environment features believed to promote walking. Although specification details vary, these indices typically include measures of population density, land use, and street network. Our walkability measure was adapted from that employed in recent papers by Frank and colleagues (2005 and 2006), which includes four components: residential population density (density of population per total residential land area), intersection density, an entropy measure of land use based on the distribution of building floor area among six land use types (education, entertainment, single-family residential, multi-family residential, retail, and office), and the retail floor area ratio, or the ratio of retail building floor area to retail land area. All of the Frank components were z-scored and summed, with intersection density receiving a double weight for the Frank Scale, but not for our scale. Our “BEH walkability scale” is documented in a paper by Neckerman and colleagues (2009).</p>
+
+<ul>
+  <li>
+    <p><em>Frank et al. Linking objectively measured physical activity with objectively measured urban form: findings from SMARTRAQ. American Journal of Preventive Medicine. 2005;28(2 Suppl 2):117-125.</em></p>
+  </li>
+  <li>
+    <p><em>Frank et al. Many Pathways from Land Use to Health: Associations between Neighborhood Walkability and ActiveTransportation, Body Mass Index, and Air Quality. Journal of the American Planning Association. 2006;72(1):75-87.</em></p>
+  </li>
+  <li>
+    <p><em>Neckerman et al. Disparities in urban neighborhood conditions: Evidence from GIS measures and field observation in New York City. Journal of
+Public Health Policy. 2009;1(1 Suppl): S264-S285.</em></p>
+  </li>
+</ul>
+
+<p>Important Note:
+Many of the figures in this document refer to 2010 Census Blocks. This data dictionary is for the 2010 Census Tracts. Figures
+are only for illustrative purposes.</p>
+
+<h1 id="walkability-index-scales-city-wide-buffers">Walkability Index Scales: City-­Wide Buffers</h1>
+<p>As an alternative to creating a ‘neighborhood walkability index scale’ based solely on the z-scored components within buffers specific to a study cohort, the BEH Working Group has developed a walkability index scale that considers the z-scored components across New York City as a whole.</p>
+
+<p>The issue with creating a walkability index scale using buffer definitions specific to a study cohort is that the cohort may be spatially biased or clustered in a particular neighborhood(s) or parts of the City (e.g., northern Manhattan or the south Bronx). This could dramatically influence the range of z-scored components, and thus not provide a representative scale of walkability for that cohort compared to the walkability of the rest of the City.</p>
+
+<p>The BEH Working Group has tackled this problem by buffering 2010 Census Block centroids (n=38,526) by 1-km radial buffers and then deriving the walkability
+components that are later z-scored. In doing so, a more appropriate apples-to-apple comparison of walkability can be made between, say, an address in Staten Island to the rest of the City as whole rather than a cluster of
+addresses all within a similar built environment.</p>
+
+<h1 id="averaging-up-to-tract">Averaging up to Tract</h1>
+<p>In order to assign each 2010 Census Tract with the city-wide walkability index scale, the walkability index scale values for each Block centroid were simply averaged up to the Tract level. The following variables are the result of that process:</p>
+
+<h4 id="t10key">t10_key</h4>
+<p>Unique 11-digit US 2010 Census Tract ID.</p>
+
+<h4 id="t10km2-1">t10_km2</h4>
+<p>Total area of US 2010 Census Tract geography in km2.</p>
+
+<h4 id="t10lndkm2-1">t10_lndkm2</h4>
+<p>Total land area of US 2010 Census Tract geography in km2 (inland water bodies removed).</p>
+
+<h4 id="t10cnt-1">t10_cnt</h4>
+<p>Count of unique 2010 Census Blocks nested within each Tract and whose walkability index scale values participated in averaging-up process for each Tract.</p>
+
+<h4 id="t10walk-1">t10_walk</h4>
+<p>BEH Walkability Scale.</p>
+
+<h1 id="walkability-index-scale-variables">Walkability Index Scale Variables</h1>
+<p>To date, BEH has created and used two different versions of the Walkability Index Scales, which we refer to here as the “Frank et al. 2006” and BEH scales. The “Frank 2006” includes z-scored variables: residential density, land use mix using 5 land use types, intersection density * 2, and retail area ratio. The BEH scale includes z-scored variables: residential density,
+land use mix using 5 land use types, intersection density, retail area ratio, and subway stop density. Note that the BEH scale does not multiply intersection density by 2 and does include subway density.</p>
+
+<h4 id="t10intdenz">t10_intden_z</h4>
+<p>Density of unique streets intersections per km2: z-scored.</p>
+
+<h4 id="t10sub07dz">t10_sub07d_z</h4>
+<p>Density of subway stations per km2: z-scored.</p>
+
+<h4 id="t10rtlfarz">t10_rtlfar_z</h4>
+<p>Retail floor area ratio: z-scored.</p>
+
+<h4 id="t10resdn1z">t10_resdn1_z</h4>
+<p>Density of residential units: z-scored.</p>
+
+<h4 id="t10entrpyz">t10_entrpy_z</h4>
+<p>Entropy land use mix: z-scored.</p>
+
+<h4 id="t10walkcat">t10_walk_cat</h4>
+<p>Quintiles of BEH Walkability Scale.</p>
+
+<p><strong>Please note that the variables in text below have not been provided in this deliverable and are only described here to provide context for the variables that are being provided.</strong></p>
+
+<h1 id="walkability-index-scale-component-variables">Walkability Index Scale “Component” Variables</h1>
+<p>(these variables are not included in the dataset)</p>
+
+<h4 id="b1intden">b1_intden</h4>
+<p>Density of unique streets intersections per km2.</p>
+
+<h4 id="b1sub07d">b1_sub07d</h4>
+<p>Density of subway stations per km2.</p>
+
+<h4 id="b1rtlfar">b1_rtlfar</h4>
+<p>Retail floor area ratio – Retail building floor area divided by retail land area in km2.</p>
+
+<h4 id="b1resdn1">b1_resdn1</h4>
+<p>Density of res units – Number of residential units divided by total residential building floor area in km2.</p>
+
+<h4 id="b1entrpy">b1_entrpy</h4>
+<p>Land Use Mix – An entropy measure using the five of the six land use types employed in Frank et al. (2006). Single- and multi-family residential areas were combined because most housing in New York City is multi-family. Parcel-level measures of residential, office, and retail floor area were available from the MapPLUTO (version 04c; October 2004-October 2005) database. We used the MapPLUTO building class codes to identify buildings associated with education (schools) or entertainment (theaters, recreational facilities), and attributed the entire floor area of the identified building to education or
+entertainment. The entropy formula used was adapted from Frank et al. (2005), which yielded more plausible results: Land Use Mix = A/ln(N) where: A= –((b1/a)<em>ln(b1/a)+(b2/a)</em>ln(b2/a)+…) and b1 is the building floor area covered by the first land use, b2 is the building floor area covered by the second land use, etc., a is the total floor area across the five land uses, and N is the total number of land uses represented in the census tract. Zero values for b1…b5 were set to .000001 to avoid zero or undefined terms.</p>
+
+<ul>
+  <li>
+    <h3 id="components-of-the-entropy-measure">Components of the Entropy Measure:</h3>
+    <ul>
+      <li>
+        <h4 id="b1b1">b1_b1</h4>
+        <p>Total building area for Education uses in square feet (set to .000001 if 0)</p>
+      </li>
+      <li>
+        <h4 id="b1b2">b1_b2</h4>
+        <p>Total building area for Entertainment uses in square feet (set to .000001 if 0)</p>
+      </li>
+      <li>
+        <h4 id="b1b3">b1_b3</h4>
+        <p>Total building area Residential uses in square feet (set to .000001 if 0)</p>
+      </li>
+      <li>
+        <h4 id="b1b4">b1_b4</h4>
+        <p>Total building area for Retail uses in square feet (set to .000001 if 0)</p>
+      </li>
+      <li>
+        <h4 id="b1b5">b1_b5</h4>
+        <p>Total building area for Office uses in square feet (set to .000001 if 0)</p>
+      </li>
+      <li>
+        <h4 id="b1a">b1_a</h4>
+        <p>Total floor area across the five land uses in square feet (set to .000001 if 0)</p>
+      </li>
+      <li>
+        <h4 id="b1n">b1_n</h4>
+        <p>The total number of land uses represented (between 1 and 5)</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="arcmap-entropy-field-calculation-expression">ArcMap Entropy Field Calculation Expression:</h3>
+
+<pre><code>entropy = –((([b1] / [a]) * log ( [b1] / [a] )) + (([b2] / [a]) * log ( [b2] / [a] )) + (([b3] / [a]) * log ( [b3] / [a] )) + (([b4] / [a]) * log ( [b4] / [a] )) + (([b5] / [a]) * log ( [b5] / [a] ))) / log ( [n] )
+</code></pre>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading"></h2> -->
+
+   <!--  <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li></li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div> -->
+
+
+    <a href="http://www.mailman.columbia.edu/academic-departments/epidemiology" target="_blank"><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/mailman_epi_4c.png" width="35%" height="35%" alt="epi_logo"/></a>
+    <a href="http://beh.columbia.edu" target="_blank"><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/beh_logo_shadow.png" width="25%" height="25%" alt="beh_logo"/></a>
+    <a href="http://cupop.columbia.edu/" target="_blank"><img src="https://raw.githubusercontent.com/beh-gis/beh-gis.github.com/master/img/cprc_logo.png" width="35%" height="35%" alt="epi_logo"/></a>
+
+
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

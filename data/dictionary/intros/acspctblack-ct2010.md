@@ -1,0 +1,1 @@
+####Percent population Black####American Community Survey 2008-2012 (5-year)	df[geo+'B02001003E'] / df[geo+'B02001001E']
